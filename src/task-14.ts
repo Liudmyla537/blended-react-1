@@ -1,14 +1,14 @@
 // Функція fetchMessage повертає проміс, який повертає рядок.
 
-// function fetchMessage(): Promise<string> {
-//   return new Promise((resolve) => {
-//     resolve("Hello from server!");
-//     // resolve(123);
-//   });
-// }
+function fetchMessage(): Promise<string> {
+  return new Promise((resolve) => {
+    resolve("Hello from server!");
+    // resolve(123);
+  });
+}
 
-// fetchMessage()
-//     .then(message => console.log(message));
+fetchMessage()
+    .then(message => console.log(message));
 
 // Завдання:
 
