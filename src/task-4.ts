@@ -2,15 +2,15 @@
 
 
 
-// const dimensions: number[] = [1920, 1080];
+const dimensions: number[] = [1920, 1080];
 
-// console.log(dimensions);
-
-
+console.log(dimensions);
 
 
 
-// ************************************************
+
+
+
 // Завдання:
 
 // Додайте до змінної dimensions явну типізацію.
