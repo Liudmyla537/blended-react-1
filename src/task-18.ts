@@ -3,25 +3,25 @@
 
 
 
-// import axios from "axios";
+import axios from "axios";
 
-// interface User {
-//     id: number;
-//     name: string;
-//     username: string;
-// }
+interface User {
+    id: number;
+    name: string;
+    username: string;
+}
 
-// const fetchUsers = async (): Promise<User[]> => {
-//   const response = await axios.get<User[]>("https://jsonplaceholder.typicode.com/users");
-//   return response.data;
-// };
+const fetchUsers = async (): Promise<User[]> => {
+  const response = await axios.get<User[]>("https://jsonplaceholder.typicode.com/users");
+  return response.data;
+};
 
-// const getUsers = async () => {
-//   const users = await fetchUsers();
-//   console.log(users);
-// };
+const getUsers = async () => {
+  const users = await fetchUsers();
+  console.log(users);
+};
 
-// getUsers();
+getUsers();
 
 
 
