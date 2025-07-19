@@ -24,49 +24,48 @@
 
 
 
-// // 1. Створили загальний інтерфейс Container 
-// interface Container<T>{
-//     items: T[];
-//     addItem(item: T): void;
-//     getItem(index: number): T;
-// }
+// 1. Створили загальний інтерфейс Container 
+interface Container<T>{
+    items: T[];
+    addItem(item: T): void;
+    getItem(index: number): T;
+}
 
-// // 2. Створила 2 контейнери numberContainer та stringContainer
-// const numberContainer: Container<number> = {
-//     items: [1, 2, 3],
+// 2. Створила 2 контейнери numberContainer та stringContainer
+const numberContainer: Container<number> = {
+    items: [1, 2, 3],
 
-//     //  3 . Використала методи addItem та getItem
-//     addItem(item) {
-//         this.items.push(item);
-//     },
-//     getItem(index) {
-//         return this.items[index]
-//     } 
+ //  3 . Використала методи addItem та getItem
+    addItem(item) {
+        this.items.push(item);
+    },
+    getItem(index) {
+        return this.items[index]
+    } 
+}
 
-// }
+const stringContainer: Container<string> = {
+    items: ["Alice", "Petya"],
+    addItem(item) {
+        this.items.push(item);
+    },
+    getItem(index) {
+        return this.items[index]
+    } 
+}
 
-// const stringContainer: Container<string> = {
-//     items: ["Alice", "Petya"],
-//     addItem(item) {
-//         this.items.push(item);
-//     },
-//     getItem(index) {
-//         return this.items[index]
-//     } 
-// }
+// 4. Створила ф-цію getLastElement, яка приймає масив елементів контейнера Container і повертає останній елемент масиву.
 
-// // 4. Створила ф-цію getLastElement, яка приймає масив елементів контейнера Container і повертає останній елемент масиву.
-
-// function getLastElement<T>(items: T[]): T {
-// return items[items.length - 1]
-// };
+function getLastElement<T>(items: T[]): T {
+return items[items.length - 1]
+};
 
 
-// // 5. Перевірка
-// numberContainer.addItem(4);
-// console.log(getLastElement(numberContainer.items));
+// 5. Перевірка
+numberContainer.addItem(4);
+console.log(getLastElement(numberContainer.items));
 
-// stringContainer.addItem("Olha");
-// console.log(getLastElement(stringContainer.items));
+stringContainer.addItem("Olha");
+console.log(getLastElement(stringContainer.items));
 
 
