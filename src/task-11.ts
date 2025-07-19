@@ -23,20 +23,20 @@
 
 // 5. Якщо city немає — виводьте "Unknown"
 
-// interface User {
-//     username: string;
-//     age: number;
-//     city?: string;
-// }
+interface User {
+    username: string;
+    age: number;
+    city?: string;
+}
 
-// type Role = "admin" | "user" |  "guest"
+type Role = "admin" | "user" |  "guest"
 
 
-// function createUserCard(user: User, role: Role) {
-//     const city = user.city ?? "Unknown";
+function createUserCard(user: User, role: Role) {
+    const city = user.city ?? "Unknown";
     
-//     return `${user.username} (${user.age}) — ${role} from ${city}`
-// }
+    return `${user.username} (${user.age}) — ${role} from ${city}`
+}
 
-// console.log(createUserCard({ username: "Anna", age: 25, city: "Kyiv" }, "admin"));
-// console.log(createUserCard({ username: "Max", age: 30 }, "guest"));
+console.log(createUserCard({ username: "Anna", age: 25, city: "Kyiv" }, "admin"));
+console.log(createUserCard({ username: "Max", age: 30 }, "guest"));
