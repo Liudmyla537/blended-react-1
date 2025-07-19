@@ -1,15 +1,15 @@
 // Є функція sendDoneStatus:
 
-// type Callback = ( status: string ) => void;
+type Callback = ( status: string ) => void;
 
-// function sendDoneStatus(callback: Callback) {
-//   callback("done");
-// }
+function sendDoneStatus(callback: Callback) {
+  callback("done");
+}
 
-// sendDoneStatus((status) => {
-//     console.log("status", status);
+sendDoneStatus((status) => {
+    console.log("status", status);
     
-// })
+})
 
 
 // Завдання:
