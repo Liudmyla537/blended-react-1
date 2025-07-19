@@ -1,21 +1,20 @@
 // У вас є масив імен користувачів:У вас є масив імен користувачів:
 
-// interface User {
-//     id: number;
-//     name: string;
-// }
+interface User {
+    id: number;
+    name: string;
+}
 
-// function toUserObjects(username: string[]): User[] {
-//     return username.map((name, index) => ({
-//         id: index + 1,
-//         name: name,
-//     }));
-// }
+function toUserObjects(username: string[]): User[] {
+    return username.map((name, index) => ({
+        id: index + 1,
+        name: name,
+    }));
+}
 
-// const users = ["alice", "bob", "charlie"];
+const users = ["alice", "bob", "charlie"];
 
-// const result = toUserObjects(users);
-// console.log(result);
+console.log(toUserObjects(users));
 
 
 
